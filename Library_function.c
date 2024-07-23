@@ -8,5 +8,5 @@ int main()
     j=sqrt(i);
     printf("The square route of %d is = %d",i,j);
     
-    
+   // dsmasdmahdggd
     }
