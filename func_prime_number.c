@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-int flag=0;
+int flag;
 int isprime(int n)
 {
 
@@ -14,26 +14,17 @@ int isprime(int n)
         {
            
             flag=1;
+            return flag;
         }
         else{
 
         
             flag=0;
-
+            return flag;
         }
 
     }
-     if(flag==1)
-      {
-             printf("Entered number is  prime number: \t");
-
-      }
-      
-      else
-      {
-              printf("Entered number is not a prime number: \t");
-
-      }
+    
 }
 
 int main()
@@ -42,5 +33,15 @@ int main()
     printf("Enter the number :\t");
     scanf("%d",&i);
     isprime(i);
-     
+      if(flag==1)
+      {
+             printf("Entered number is not a prime number: \t");
+
+      }
+      
+      else
+      {
+              printf("Entered number is a prime number: \t");
+
+      }
 }
